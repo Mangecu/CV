@@ -99,3 +99,13 @@ label {
 legend {
     display: block;
 }
+
+/*---Custom---*/
+
+* {
+    font-family: "Gilroy", sans-serif;
+}
+
+*[lang] {
+    /*display: none;*/
+}
