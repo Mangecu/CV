@@ -4,13 +4,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="../CV/assets/css/main.css">
+   <link rel="stylesheet" href="./assets/css/main.css">
    <title>My CV Page</title>
 </head>
-<body lang="en">
+<body>
 <div class="page">
    <header class="header container">
-      <nav class="header__nav" lang="en">
+      <nav class="header__nav">
          <ul class="header__list">
             <li class="header__item"><a href="#" class="header__link">Home</a></li>
             <li class="header__item"><a href="#" class="header__link">About me</a></li>
@@ -19,21 +19,12 @@
             <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
          </ul>
       </nav>
-      <!--<nav class="header__nav" lang="ru">
-         <ul class="header__list">
-            <li class="header__item"><a href="#" class="header__link">Главная</a></li>
-            <li class="header__item"><a href="#" class="header__link">Обо мне</a></li>
-            <li class="header__item"><a href="#" class="header__link">Навыки</a></li>
-            <li class="header__item"><a href="#" class="header__link">Портфолио</a></li>
-            <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
-         </ul>
-      </nav>-->
    </header>
    <main class="main">
       <section class="preview container">
          <div class="preview__info">
-            <h1 class="preview__name" lang="en">Fuad <br> Ragimov</h1>
-            <div class="preview__disc" lang="en">
+            <h1 class="preview__name">Fuad <br> Ragimov</h1>
+            <div class="preview__disc">
                <p>Frontend Developer</p>
                <p>30 years old, Moscow</p>
             </div>
@@ -53,18 +44,59 @@
       <section class="about-me">
          <div class="about-me__wrap container">
             <h2 class="about-me__title">About me</h2>
-            <p class="about-me__info">
-               Hi, I'm Denis – UX/UI designer from Minsk.
-               I'm interested in design and everything connected with it.
-            </p>
-            <p class="about-me__info">
-               I'm studying at courses "Web and mobile design
-               interfaces" in IT-Academy.
-            </p>
-            <p class="about-me__info">
+            <pre class="about-me__info">
+               Hi, I'm Fuad – Beginner Frontend Developer from Moscow.
+               I'm interested in programming and everything connected with it.
+            </pre>
+            <pre class="about-me__info">
+               I'm studying at courses "Faculty of Web Development" in GeekBrains.
+               Completed the programs "Modern HTML and CSS course" and "JavaScript/DOM/Interfaces course".
+            </pre>
+            <pre class="about-me__info">
                Ready to implement excellent projects
                with wonderful people.
-            </p>
+            </pre>
+<!--            <div class="carousel">-->
+<!--               <svg class="carousel__icon carousel__icon_left" >-->
+<!--                  <use href="assets/images/svg/sprite.svg#arrow-left"></use>-->
+<!--               </svg>-->
+<!--               <svg class="carousel__icon carousel__icon_right" >-->
+<!--                  <use href="assets/images/svg/sprite.svg#arrow-right"></use>-->
+<!--               </svg>-->
+<!--               <div class="carousel__inner">-->
+<!--                  <div class="carousel__slide">-->
+<!--                     <img src="./assets/images/img/HTML_CSS_GB_en.jpg" alt="slide_1">-->
+<!--                  </div>-->
+<!--                  <div class="carousel__slide">-->
+<!--                     <img src="./assets/images/img/Basics%20of%20JS_en.jpg" alt="slide_2">-->
+<!--                  </div>-->
+<!--                  <div class="carousel__slide">-->
+<!--                     <img src="./assets/images/img/Modern%20HTML%20and%20CSS%20course_en.jpg" alt="slide_3">-->
+<!--                  </div>-->
+<!--                  <div class="carousel__slide">-->
+<!--                     <img src="./assets/images/img/JS_DOM_Interfaces_en.jpg" alt="slide_4">-->
+<!--                  </div>-->
+<!--               </div>-->
+<!--            </div>-->
+         </div>
+      </section>
+      <section class="skills container">
+         <h2 class="skills__title">Skills</h2>
+         <p class="subtitle">I work in such programs as</p>
+         <div class="skills__items">
+            <div class="item">
+               <div class="item__img">
+                  <img src="./assets/images/img/HTML.png" alt="HTML-icon">
+               </div>
+               <p class="item__title">HTML</p>
+               <div class="item__rating">
+                  <svg class="item__star item__star_active"><use href="assets/images/svg/sprite.svg#star"></use></svg>
+                  <svg class="item__star item__star_active"><use href="assets/images/svg/sprite.svg#star"></use></svg>
+                  <svg class="item__star item__star_active"><use href="assets/images/svg/sprite.svg#star"></use></svg>
+                  <svg class="item__star item__star_active"><use href="assets/images/svg/sprite.svg#star"></use></svg>
+                  <svg class="item__star"><use href="assets/images/svg/sprite.svg#star"></use></svg>
+               </div>
+            </div>
          </div>
       </section>
    </main>

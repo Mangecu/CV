@@ -1,99 +1,113 @@
-@import "../fonts/fonts.css";
-@import "../css/reset.css";
-@import "../css/colors.css";
+@import url(../fonts/fonts.css);
+@import url(../css/reset.css);
+@import url(../css/colors.css);
 .page {
   display: grid;
-  grid-template-rows: auto 1fr auto;
-}
+  grid-template-rows: auto 1fr auto; }
 
 .container {
   max-width: 940px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .header {
-  width: 100%;
-}
-.header .header__nav {
-  border-bottom: 1px solid var(--gray-1);
-  transform: matrix(1, 0, 0, 1, 0, 0);
-}
-.header .header__nav .header__list {
-  display: flex;
-  justify-content: space-between;
-  padding: 33px 0;
-  flex-wrap: wrap;
-}
-.header .header__nav .header__list .header__item {
-  font-size: 18px;
-  font-weight: 700;
-}
-.header .header__nav .header__list .header__item .header__link {
-  color: var(--black);
-}
+  width: 100%; }
+  .header .header__nav {
+    border-bottom: 1px solid var(--gray-1);
+    transform: matrix(1, 0, 0, 1, 0, 0); }
+    .header .header__nav .header__list {
+      display: flex;
+      justify-content: space-between;
+      padding: 33px 0;
+      flex-wrap: wrap; }
+      .header .header__nav .header__list .header__item {
+        font-size: 18px;
+        font-weight: 700; }
+        .header .header__nav .header__list .header__item .header__link {
+          color: var(--black); }
 
 .preview {
   display: flex;
   flex-direction: column;
-  margin-bottom: 54px;
-}
-.preview .preview__info {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  color: var(--black);
-  margin-top: 40px;
-}
-.preview .preview__info .preview__name {
-  font-weight: 700;
-  font-size: 47px;
-  line-height: 59px;
-}
-.preview .preview__info .preview__disc {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-}
-.preview .preview__info .preview__lang {
-  display: flex;
-  transform: translate(40%, -115%) rotate(-90deg);
-}
-.preview .preview__info .preview__lang .preview__line {
-  padding: 0 6px;
-  font-weight: 700;
-}
+  margin-bottom: 54px; }
+  .preview .preview__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: var(--black);
+    margin-top: 40px; }
+    .preview .preview__info .preview__name {
+      font-weight: 700;
+      font-size: 47px;
+      line-height: 59px; }
+    .preview .preview__info .preview__disc {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px; }
+    .preview .preview__info .preview__lang {
+      display: flex;
+      transform: translate(40%, -115%) rotate(-90deg); }
+      .preview .preview__info .preview__lang .preview__line {
+        padding: 0 6px;
+        font-weight: 700; }
 
 .button__lang {
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--gray-1);
-}
+  color: var(--gray-1); }
 
 .button__lang_active {
-  color: var(--black);
-}
+  color: var(--black); }
 
 .radio {
-  position: relative;
-}
-.radio .radio__title {
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--black);
-  font-weight: 700;
-}
-.radio .radio__input {
-  position: absolute;
-  outline: none;
-  clip: rect(0, 0, 0, 0);
-}
-.radio .radio__input:checked ~ .radio__title {
-  color: var(--gray-1);
-}
+  position: relative; }
+  .radio .radio__title {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+    font-weight: 700; }
+  .radio .radio__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0); }
+    .radio .radio__input:checked ~ .radio__title {
+      color: var(--gray-1); }
 
 .about-me {
-  background-color: var(--gray-2);
-}
+  background-color: var(--gray-2); }
+  .about-me .about-me__wrap {
+    padding: 120px 0 107px;
+    text-align: center;
+    color: var(--black); }
+    .about-me .about-me__wrap .about-me__title {
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 0.8;
+      margin-bottom: 35px; }
+    .about-me .about-me__wrap .about-me__info {
+      font-size: 18px;
+      font-weight: 500; }
+
+.skills {
+  padding: 91px 0 110px; }
+  .skills .skills__title {
+    color: var(--black);
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700; }
+
+.carousel {
+  display: flex; }
+  .carousel .carousel__inner {
+    display: flex;
+    align-items: center;
+    transition: all 1s ease; }
+    .carousel .carousel__inner .carousel__slide {
+      position: relative; }
+      .carousel .carousel__inner .carousel__slide .carousel__icon {
+        position: absolute;
+        z-index: 3;
+        transform: translate(0, -50%);
+        cursor: pointer; }
