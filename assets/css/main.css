@@ -98,6 +98,21 @@
     font-size: 34px;
     font-weight: 700; }
 
+.item .item__img {
+  height: 90px;
+  width: 90px; }
+.item .item__title {
+  color: var(--gray-1);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700; }
+.item .item__rating {
+  display: flex;
+  gap: 14px; }
+  .item .item__rating .item__star {
+    height: 27px;
+    width: 27px; }
+
 .carousel {
   display: flex; }
   .carousel .carousel__inner {
