@@ -12,16 +12,16 @@
    <header class="header container">
       <nav class="header__nav">
          <ul class="header__list">
-            <li class="header__item"><a href="#" class="header__link">Home</a></li>
-            <li class="header__item"><a href="#" class="header__link">About me</a></li>
-            <li class="header__item"><a href="#" class="header__link">Skills</a></li>
-            <li class="header__item"><a href="#" class="header__link">Portfolio</a></li>
-            <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
+            <li class="header__item"><a href="#home" class="header__link">Home</a></li>
+            <li class="header__item"><a href="#about-me" class="header__link">About me</a></li>
+            <li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
+            <li class="header__item"><a href="#portfolio" class="header__link">Portfolio</a></li>
+            <li class="header__item"><a href="#contacts" class="header__link">Contacts</a></li>
          </ul>
       </nav>
    </header>
    <main class="main">
-      <section class="preview container">
+      <article class="preview container" id="home">
          <div class="preview__info">
             <h1 class="preview__name">Fuad <br> Ragimov</h1>
             <div class="preview__disc">
@@ -40,8 +40,8 @@
                </label>
             </div>
          </div>
-      </section>
-      <section class="about-me">
+      </article>
+      <article class="about-me" id="about-me">
          <div class="about-me__wrap container">
             <h2 class="about-me__title">About me</h2>
             <pre class="about-me__info">
@@ -79,8 +79,8 @@
 <!--               </div>-->
 <!--            </div>-->
          </div>
-      </section>
-      <section class="skills container">
+      </article>
+      <article class="skills container" id="skills">
          <h2 class="skills__title">Skills</h2>
          <p class="skills__subtitle">I work in such programs as</p>
          <div class="skills__items">
@@ -215,45 +215,33 @@
                </div>
             </div>
          </div>
-      </section>
-      <section class="portfolio">
+      </article>
+      <article class="portfolio" id="portfolio">
          <div class="portfolio__wrap container">
             <h2 class="portfolio__title">Portfolio</h2>
             <div class="portfolio__content"></div>
          </div>
-      </section>
+      </article>
+      <article class="contacts container" id="contacts">
+         <div class="contacts__wrap">
+            <h2 class="contacts__title">Contacts</h2>
+            <pre class="contacts__subtitle">
+Want to know more or just chat?
+You are welcome!
+         </pre>
+            <a href="mailto:foyado@gmail.com" class="contacts__link">Send message</a>
+         </div>
+      </article>
    </main>
    <footer class="footer container">
       <div class="footer__wrap">
-         <h2 class="footer__title">Contacts</h2>
-         <pre class="footer__subtitle">
-Want to know more or just chat?
-You are welcome!
-      </pre>
-         <div class="footer__massage">
-            <button class="footer__btn">Send message</button>
-            <div class="footer__links">
-               <a href="https://t.me/mangecu" target="_blank" rel="noopener noreferrer" class="footer__link">
-                  <svg class="footer__icon">
-                     <use href="assets/images/svg/sprite.svg#telegram"></use>
-                  </svg>
-               </a>
-               <a href="https://api.whatsapp.com/send?phone=79000000000" target="_blank" title="Написать в Whatsapp" rel="noopener noreferrer" class="footer__link">
-                  <svg class="footer__icon">
-                     <use href="assets/images/svg/sprite.svg#whatsapp"></use>
-                  </svg>
-               </a>
-               <a href="mailto:foyado@gmail.com" class="footer__link">
-                  <svg class="footer__icon">
-                     <use href="assets/images/svg/sprite.svg#mail"></use>
-                  </svg>
-               </a>
-               <a href="#" class="footer__link">
-                  <svg class="footer__icon">
-                     <use href="assets/images/svg/sprite.svg#discord"></use>
-                  </svg>
-               </a>
-            </div>
+         <div class="footer__social">
+            <svg class="footer__icon">
+               <use href="assets/images/svg/sprite.svg#linkedin"></use>
+            </svg>
+            <svg class="footer__icon">
+               <use href="assets/images/svg/sprite.svg#inst"></use>
+            </svg>
          </div>
       </div>
    </footer>

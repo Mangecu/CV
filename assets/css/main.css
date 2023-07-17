@@ -149,50 +149,30 @@
     font-weight: 700;
     margin-bottom: 47px; }
 
-.footer {
-  padding: 114px 0 123px; }
-  .footer .footer__wrap {
+.contacts .contacts__wrap {
+  color: var(--black);
+  padding: 114px 0 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contacts .contacts__wrap .contacts__title {
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .contacts .contacts__wrap .contacts__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center; }
+  .contacts .contacts__wrap .contacts__link {
+    width: 180px;
+    height: 42px;
+    border-radius: 21px;
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .footer .footer__wrap .footer__title {
-      color: var(--black);
-      text-align: center;
-      font-size: 34px;
-      font-weight: 700;
-      margin-bottom: 20px; }
-    .footer .footer__wrap .footer__subtitle {
-      color: var(--black);
-      text-align: center;
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 30px; }
-    .footer .footer__wrap .footer__massage {
-      position: relative; }
-      .footer .footer__wrap .footer__massage .footer__btn {
-        text-align: center;
-        font-size: 18px;
-        font-weight: 700;
-        color: var(--white);
-        width: 180px;
-        padding: 14px 0;
-        background-color: var(--black);
-        line-height: 14px;
-        border-radius: 21px; }
-      .footer .footer__wrap .footer__massage .footer__links {
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 25px;
-        width: 250px;
-        display: flex;
-        transform: translate(-13%, 100%);
-        justify-content: space-between;
-        border: 2px solid var(--gray-3); }
-        .footer .footer__wrap .footer__massage .footer__links .footer__link {
-          width: 41px;
-          height: 41px; }
-          .footer .footer__wrap .footer__massage .footer__links .footer__link .footer__icon {
-            width: inherit;
-            height: inherit;
-            color: var(--black); }
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white); }
+
+.footer .footer__wrap {
+  padding: 43px 0 123px; }
